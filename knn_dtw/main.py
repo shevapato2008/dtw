@@ -9,11 +9,6 @@ from classes import *
 
 plt.style.use('bmh')
 
-try:
-    from IPython.display import clear_output
-    have_ipython = True
-except ImportError:
-    have_ipython = False
 
 
 '''
@@ -36,7 +31,7 @@ _ = plt.ylabel('Amplitude')
 _ = plt.xlabel('Time')
 _ = plt.legend()
 
-
+m._dist_matrix(np.random.random((4, 50)), np.random.random((4, 50)))
 
 
 

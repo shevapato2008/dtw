@@ -1,5 +1,11 @@
 import sys
 
+try:
+    from IPython.display import clear_output
+    have_ipython = True
+except ImportError:
+    have_ipython = False
+
 class ProgressBar:
     """This progress bar was taken from PYMC
     """
