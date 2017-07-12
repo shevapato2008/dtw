@@ -1,3 +1,5 @@
+import sys
+
 class ProgressBar:
     """This progress bar was taken from PYMC
     """
